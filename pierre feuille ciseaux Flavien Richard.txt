@@ -1,0 +1,18 @@
+"Debut"
+
+#On admet une fonction random qui retourne un chiffre entre 0 et 2
+#on admet input une action qui recupere l'entrer du joueur
+
+#on defini une fonction nommer play qui demarre le partie de pierre feuille ciseaux
+    #On cree une variable X on assigne le retour de l'execution de la fonction input ou on demande au joueur d'entrer "pierre", "feuille" ou "ciseaux" 
+    #On cree une variable resultat ou assigne le retour de l'execution de la fonction random 
+    #Si resultat est egale a 0
+        #Alors on renvoie le message "égalité"
+    #Sinon si resultat est egale a 1
+        #Alors on renvoie le message "Vous avez gagner"
+    #Sinon si resultat est egale a 2
+        #Alors on renvoie le message "Vous avez perdu"
+
+#execution de la fonction play
+
+"Fin"
