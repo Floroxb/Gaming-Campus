@@ -1,0 +1,123 @@
+#Debut 
+
+#On cree une liste morpionTab avecrien a l'interieur
+#On cree une liste tab1 avec a l'interieur "-" "-" "-"
+#On cree une liste tab2 avec a l'interieur "-" "-" "-"
+#On cree une liste tab3 avec a l'interieur "-" "-" "-"
+#on rajoute dans la liste morpionTab la tab1
+#on rajoute dans la liste morpionTab la tab2
+#on rajoute dans la liste morpionTab la tab3
+
+#on defini une fonction nommer play qui demarre le morpion
+    
+    #On cree une variable turn qui est agle a 0
+    #on cree une variable X qui est egale a True
+    #on cree une boucle qui continue tant que turn n'est pas égale a 9
+        
+        #On fait un input ou on demandera quel ligne le joeur veux choisir
+        #On fait un input ou on demandera quel colonne le joeur veux choisir
+        
+        #Si X est egale a True      
+            #Alors si l'input ligne et l'input colonne est egale ou inferieur a la taille de la liste morpionTab
+                #Alors si la ligne et la colonne choisi est egale a "-"
+                    #alors la ligne et la colonne est egale a "x"
+                    #pour i dans une distance de 3
+                        #On print morpionTab de i
+                        #Changer X en False
+                    #ajouter 1 a turn
+                #Alors print "cette case a deja ete selectionner"
+        
+        #Sinon
+        else:
+            #Si  l'input ligne et l'input colonne est egale ou inferieur a la taille de la liste morpionTab
+                #Alors si la ligne et la colonne choisi est egale a "-"
+                    #alors la ligne et la colonne est egale a "o"
+                    #pour i dans une distance de 3
+                        #On print morpionTab de i
+                        #Changer X en True
+                    #ajouter 1 a turn
+                #Sinon print "cette case a déja été sélèctionner"
+        
+        #Si la ligne 2 et la colonne 2 de morpionTab est egale a "x"
+            #Alors Si la ligne 1 et la colonne 1 de morpionTab est égale a "x" et la ligne 3 et la colonne 3 de morpionTab est egale a "x"
+                #Alors print "Player X a gagné"
+                #break la boucle
+            
+            #Sinon Si la ligne 1 et la colonne 3 de morpionTab est égale a "x" et la ligne 3 et la colonne 1 de morpionTab est egale a "x"
+                #Alors print "Player X a gagné"
+                #break la boucle
+            
+            #Sinon Si la ligne 2 et la colonne 1 de morpionTab est égale a "x" et la ligne 2 et la colonne 3 de morpionTab est egale a "x"
+                #Alors print "Player X a gagné"
+                #break la boucle
+            
+            #Sinon Si la ligne 1 et la colonne 2 de morpionTab est égale a "x" et la ligne 3 et la colonne 2 de morpionTab est egale a "x"
+                #Alors print "Player X a gagné"
+                #break la boucle
+        
+        #Sinon Si la ligne 2 et la colonne 1 de morpionTab est egale a "x"
+        elif morpionTab[1][0] == "x":
+            #Sinon Si la ligne 1 et la colonne 1 de morpionTab est égale a "x" et la ligne 3 et la colonne 1 de morpionTab est egale a "x"
+                #Alors print "Player X a gagné"
+                #break la boucle
+        
+        #Sinon Si la ligne 2 et la colonne 3 de morpionTab est egale a "x"
+        elif morpionTab[1][2] == "x":
+            #Sinon Si la ligne 1 et la colonne 3 de morpionTab est égale a "x" et la ligne 3 et la colonne 3 de morpionTab est egale a "x"
+                #Alors print "Player X a gagné"
+                #break la boucle
+        
+        #Sinon Si la ligne 3 et la colonne 2 de morpionTab est egale a "x"
+        elif morpionTab[2][1] == "x":
+            #Sinon Si la ligne 3 et la colonne 2 de morpionTab est égale a "x" et la ligne 3 et la colonne 3 de morpionTab est egale a "x"
+                #Alors print "Player X a gagné"
+                #break la boucle
+        
+        #Sinon Si la ligne 1 et la colonne 2 de morpionTab est egale a "x"
+        elif morpionTab[0][1] == "x" :
+            #Sinon Si la ligne 1 et la colonne 1 de morpionTab est égale a "x" et la ligne 1 et la colonne 3 de morpionTab est egale a "x"
+                #Alors print "Player X a gagné"
+                #break la boucle
+        #Si la ligne 2 et la colonne 2 de morpionTab est egale a "o"
+            #Alors Si la ligne 1 et la colonne 1 de morpionTab est égale a "o" et la ligne 3 et la colonne 3 de morpionTab est egale a "o"
+            if morpionTab[0][0] == "o" and morpionTab[2][2] =="o":
+                #Alors print "Player o a gagné"
+                #break la boucle
+            
+            #Sinon Si la ligne 1 et la colonne 3 de morpionTab est égale a "o" et la ligne 3 et la colonne 1 de morpionTab est egale a "o"
+                #Alors print "Player o a gagné"
+                #break la boucle
+            
+            #Sinon Si la ligne 2 et la colonne 1 de morpionTab est égale a "o" et la ligne 2 et la colonne 3 de morpionTab est egale a "o"
+                #Alors print "Player o a gagné"
+                #break la boucle
+            
+            #Sinon Si la ligne 1 et la colonne 2 de morpionTab est égale a "o" et la ligne 3 et la colonne 2 de morpionTab est egale a "o"
+                #Alors print "Player o a gagné"
+                #break la boucle
+        
+        #Sinon Si la ligne 2 et la colonne 1 de morpionTab est egale a "o"
+            #Sinon Si la ligne 1 et la colonne 1 de morpionTab est égale a "o" et la ligne 3 et la colonne 1 de morpionTab est egale a "o"
+                #Alors print "Player o a gagné"
+                #break la boucle
+        
+        #Sinon Si la ligne 2 et la colonne 3 de morpionTab est egale a "o"
+            #Sinon Si la ligne 1 et la colonne 3 de morpionTab est égale a "o" et la ligne 3 et la colonne 3 de morpionTab est egale a "o"
+                #Alors print "Player o a gagné"
+                #break la boucle
+        
+        #Sinon Si la ligne 3 et la colonne 2 de morpionTab est egale a "o"
+            #Sinon Si la ligne 3 et la colonne 2 de morpionTab est égale a "o" et la ligne 3 et la colonne 3 de morpionTab est egale a "o"
+                #Alors print "Player o a gagné"
+                #break la boucle
+        
+        #Sinon Si la ligne 1 et la colonne 2 de morpionTab est egale a "o"
+            #Sinon Si la ligne 1 et la colonne 1 de morpionTab est égale a "o" et la ligne 1 et la colonne 3 de morpionTab est egale a "o"
+                #Alors print "Player o a gagné"
+                #break la boucle
+    #Si turn est egale a 9
+        #Alors print une égalité
+
+#executer morpion
+
+#Fin
