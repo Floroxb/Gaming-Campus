@@ -1,0 +1,243 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+/*php*/
+.mojochalets_table tr.dispo td {
+  background-color: rgb(150, 199, 150) !important;
+}
+
+.mojochalets_table tr.pasdispo td {
+  background-color: rgb(209, 173, 107) !important;
+}
+
+.gallery-container {
+  display: flex;
+  gap: 15px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+
+.container-cards {
+  display: grid;
+  gap: 15px;
+  margin: 30px 0;
+  grid-template-columns: repeat(3, 1fr);
+
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+.card-chalet{
+  border-radius: 11px;
+  height: 100%;
+  width: 95%;
+  border: 1px solid rgba(42, 42, 44, 0.151);
+  
+}
+
+.card-chalet:hover {
+  box-shadow: rgba(5, 24, 40, 0.247) 0px 0px 0px 2px,
+    rgba(5, 24, 40, 0.411) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.card_image img{
+  object-fit: cover;
+  background-position: center;
+  width: 100%;
+  height: 55%;
+  border-radius: 10px 10px 2px 2px;
+}
+
+.card_description{
+  font-weight: 100;
+  margin: 10px;
+}
+
+
+/*html*/
+a {
+  text-decoration: none;
+}
+
+.purchase {
+  border-top: 11px solid #6d6d6d;
+  padding: 89px 0 0;
+  text-align: center;
+  font-family: "Lato";
+}
+
+.purchase h1 {
+  text-transform: uppercase;
+  line-height: 40px;
+  letter-spacing: 3px;
+  font-size: 26px;
+}
+
+.purchase p {
+  margin: 0 auto;
+  max-width: 750px;
+  line-height: 45px;
+  font-size: 26px;
+}
+
+.purchase-trigger {
+  display: inline-block;
+  position: relative;
+  margin-top: 50px;
+  border: 1px solid #6d6d6d;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 26px;
+}
+
+.purchase-trigger * {
+  transition: 0.4s cubic-bezier(0.165, 0.925, 0.510, 1.005);
+  -webkit-transition: 0.4s cubic-bezier(0.165, 0.925, 0.510, 1.005);
+  -moz-transition: 0.4s cubic-bezier(0.165, 0.925, 0.510, 1.005);
+  -o-transition: 0.4s cubic-bezier(0.165, 0.925, 0.510, 1.005);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.purchase-trigger span {
+  display: inline-block;
+  padding: 17px 80px;
+  width: 246px;
+  color: #6d6d6d;
+}
+
+.purchase-trigger .bubble {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 50px;
+  background: #6d6d6d;
+  width: 246px;
+  height: 74px;
+}
+
+.purchase-trigger.right .bubble {
+  margin-left: 246px;
+}
+
+.purchase-trigger:not(.right) .annual {
+  color: #fff;
+}
+
+.purchase-trigger.right .monthly {
+  color: #fff;
+}
+
+.purchase ul {
+  display: table;
+  margin: 70px auto 0;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.purchase li {
+  display: table-cell;
+  position: relative;
+  transition: all 0.25s, color 0s !important;
+  z-index: 0;
+  border: 1px solid #BBB;
+  padding: 43px 0 0;
+  width: 33.333%;
+  -webkit-transition: all 0.25s, color 0s !important;
+  -moz-transition: all 0.25s, color 0s !important;
+  -o-transition: all 0.25s, color 0s !important;
+}
+
+.purchase li:first-child {
+  position: relative;
+  right: -1px;
+}
+
+.purchase li:last-child {
+  position: relative;
+  left: -1px;
+}
+
+.purchase li:hover {
+  z-index: 1;
+  border-color: #6d6d6d;
+  box-shadow: 0 13px 48px rgba(0, 0, 0, 0.2);
+  background: #6d6d6d;
+  color: #fff;
+}
+
+.purchase li * {
+  transition: 0 !important;
+  -webkit-transition: 0 !important;
+  -moz-transition: 0 !important;
+  -o-transition: 0 !important;
+}
+
+.purchase li:hover * {
+  border-color: rgba(255, 255, 255, 0.27) !important;
+  color: #fff !important;
+}
+
+.purchase li strong {
+  display: inline-block;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  line-height: 45px;
+  letter-spacing: 2.4px;
+  color: #2F3740;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.purchase ul .purchase-description {
+  display: block;
+  line-height: 30px;
+  font-size: 19px;
+}
+
+.purchase .purchase-price {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 12px;
+  letter-spacing: 2px;
+  font-size: 84px;
+  font-weight: 400;
+}
+
+.purchase .purchase-button {
+  display: block;
+  margin-top: 6px;
+  border-top: 1px solid #bbb;
+  padding: 28px 0 24px;
+  width: 100%;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 1;
+  color: #2F3740;
+  font-size: 19px;
+}
+
+.purchase li:hover .purchase-button {
+  transition: 0;
+  -webkit-transition: 0;
+  -moz-transition: 0;
+  -o-transition: 0;
+}
+
+.purchase ul a:hover {
+  color: #6d6d6d;
+}
+
+.purchase ul a,
+.purchase ul a:hover .purchase-price,
+.purchase ul a:hover .purchase-description {
+  color: #6C6C6C;
+}
